@@ -29,14 +29,29 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+ 
+  The biggest difference between forEach and map is in maps ability to return a new array. With this is in mind we could use .map with one or more other methods to do some really cool things in a few lines of code.
+
 
 2. What is the difference between a function and a method?
+  
+  A function is a piece of code that we may write and call by its name only.  A method is code that we call off of an object. A method can be a function inside of an object that we create ourselves or it can be something like Math.random(Math.floor()) with Math being the object and .random, .floor, and others being the method.
 
 3. What is closure?
 
+  Closure is the state of an inner function being able to access and outer functions. So if we have an outer function and inside of that another function per that inner functions scope chain it will have access to the code belonging to the inner function itself, the code of the outer function, and also to anything declared globally.
+
+
 4. Describe the four rules of the 'this' keyword.
+     1. When this is invoked in the Global object the value of this will be the window object.  
+     2. Whenever there is a contextual object for a function reference implicit binding state that the object will be the function call’s this binding. 
+     3. Whenever we make a constructor call and initiate a new Object that is created and set as the this binding from that constructor call. 
+     4. Explicit binding occurs whenever we use the call or apply methods to directly state what we want the this to be. A function name may return this.something and by invoking name.call(obj) we have explicitly bound the this of the function to the object of our choosing.
 
 5. Why do we need super() in an extended class?
+    We need super in an extended class so that we may be able to call a parent classes parameters passed to the newly created with extends subclass. It can also be used when were calling a static method from a Parent class into a subclasses own method. 
+
+
 
 ## Project Set up
 
